@@ -69,8 +69,8 @@ const pets: Pet[] = [
     name: 'Loli',
     description: 'A cat',
     type: 'Cat',
-    image: 'https://ibb.co/bRQ9rfJM',
-    image2: 'https://ibb.co/bRQ9rfJM',
+    image: 'assets/cat.jpg',
+    image2: 'assets\cat.jpg',
     adopted: true,
   },
 ];

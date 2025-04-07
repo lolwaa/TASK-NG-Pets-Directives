@@ -6,15 +6,19 @@
     <app-pet *ngFor="let pet of pets" [pet]="pet"  /> 
     
 
-  <!-- <ng-container *ngFor="let pet of pets">
-    <div >
-      <app-pet *NgIf="!pet.adopted" {{pet}}></app-pet>
+   <!-- <ng-container *ngFor="let pet of pets">
+    <div *ngIf="!pet.adopted">
+      <img [src]="pet.image" [alt]="pet.name" />
+      <h3>{{ pet.name }}</h3>
+      <p>{{ pet.description }}</p>
+      <p>Type: {{ pet.type }}</p>
+      
 
-    </div>
+    </div> -->
     
     
 
-  </ng-container>  -->
+  <!-- </ng-container>  -->
     
     <!-- <app-pet [pet]="pets[1]" />
     <app-pet [pet]="pets[2]" />
