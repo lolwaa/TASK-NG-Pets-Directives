@@ -3,10 +3,23 @@
     Fur-ends
   </h1>
   <div class="py-12 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
-    <app-pet [pet]="pets[0]" />
-    <app-pet [pet]="pets[1]" />
+    <app-pet *ngFor="let pet of pets" [pet]="pet"  /> 
+    
+
+  <!-- <ng-container *ngFor="let pet of pets">
+    <div >
+      <app-pet *NgIf="!pet.adopted" {{pet}}></app-pet>
+
+    </div>
+    
+    
+
+  </ng-container>  -->
+    
+    <!-- <app-pet [pet]="pets[1]" />
     <app-pet [pet]="pets[2]" />
     <app-pet [pet]="pets[3]" />
-    <app-pet [pet]="pets[4]" />
+    <app-pet [pet]="pets[4]" /> -->
+    
   </div>
 </div>

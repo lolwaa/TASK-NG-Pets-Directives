@@ -64,6 +64,15 @@ const pets: Pet[] = [
     image2: 'https://i.ibb.co/tm8R0jm/918f1b2c568be3d77a7c29d682be874c.gif',
     adopted: false,
   },
+  {
+    id: 7,
+    name: 'Loli',
+    description: 'A cat',
+    type: 'Cat',
+    image: 'https://ibb.co/bRQ9rfJM',
+    image2: 'https://ibb.co/bRQ9rfJM',
+    adopted: true,
+  },
 ];
 
 export default pets;
